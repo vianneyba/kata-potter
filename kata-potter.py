@@ -28,7 +28,7 @@ def optimisation_prix(sets):
     sets.append(4)
 
 def calcul_prix(qty):
-  """ renvoie le prix pour une quantitée de livre"""
+  """renvoie le prix pour une quantitée de livre avec ristourne"""
   return PRIX_LIVRE * qty * DISCOUNTS.get(qty, 1)
 
 class TestPotter(unittest.TestCase):
